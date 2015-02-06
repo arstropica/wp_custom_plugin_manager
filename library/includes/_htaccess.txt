@@ -1,0 +1,15 @@
+# BEGIN CUSTOM PLUGIN MANAGER
+ErrorDocument 500 {RELPATH}scripts/500.php
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks 
+RewriteEngine On
+
+RewriteCond %{ENV:REDIRECT} !^$
+RewriteRule .* - [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule (.*) {RELPATH}index.php?redir=$1 [E=REDIRECT:1,L,NC,QSA]
+</IfModule>
+# END CUSTOM PLUGIN MANAGER

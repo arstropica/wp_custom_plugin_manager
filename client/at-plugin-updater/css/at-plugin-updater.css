@@ -1,0 +1,18 @@
+#at-plugin-updater-url
+{
+	background-repeat: no-repeat;
+	background-position: 4px 50%;
+	padding-left: 24px;
+}
+#at-plugin-updater-url.invalid
+{
+	background-image: url(../images/invalid.png);
+}
+#at-plugin-updater-url.valid
+{
+	background-image: url(../images/valid.png);
+}
+#at-plugin-updater-url.loading
+{
+	background-image: url(../images/spinner.gif) !important;
+}

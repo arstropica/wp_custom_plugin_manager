@@ -1,0 +1,10 @@
+        .uniForm,
+        .uniForm fieldset,
+        .ctrlHolder,
+        .ctrlHolder span,
+        .formHint{ /* Trigger hasLayout, move to your IE specific stylesheet if possible */
+          zoom:1;
+        }
+        .blockLabels .formHint{
+          margin-top:0;
+        }
